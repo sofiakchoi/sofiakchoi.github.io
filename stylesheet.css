@@ -131,11 +131,14 @@ p {
   background-image: url("https://live.staticflickr.com/65535/54437776455_3c4f238a16_o.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border: 1.5px solid #000;
 }
 
 footer {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 25em;
+  padding-bottom: 3em;
+  clear: left;
 }
 
 
@@ -167,4 +170,68 @@ footer p a:visited {
 footer p a:hover {
   color: #000dff;
   text-decoration: none;
+}
+
+img {
+  width: 25em;
+  margin: 2em;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 20px;
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  color: #000;
+}
+
+ul li a:link {
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  color: #000;
+}
+
+ul li a:visited {
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  color: #000;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  color: #000dff;
+}
+
+#cool{
+  float: left;
+  position: relative;
+}
+
+.flower{
+  position: relative;
+  z-index: 1;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.sun{
+  position: absolute;
+  z-index: 2; /* put .gold-box above .green-box and .dashed-box */
+  width: 80%;
+  left: 220px;
+  top: 10em;
+}
+
+#websites{
+float: left;
+position: relative;
+margin: 2em;
 }
