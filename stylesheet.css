@@ -296,12 +296,12 @@ ul li a:hover {
     display: none;
     justify-content: left;
     text-align: left;
-padding: 0;
+    padding: 0;
 
   }
 
   #dropdown ul li ul a {
-    color: 000;
+    color: #000;
     background-color: #ffffff;
   }
 
@@ -320,7 +320,6 @@ padding: 0;
   #box {
     display: grid;
     grid-template-columns: 1fr;
-    gap: ;
   }
 
   #right {
