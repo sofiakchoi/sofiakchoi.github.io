@@ -30,7 +30,7 @@ body {
   width: 95%;
   height: auto;
   margin: 25px auto;
-  background-color: #f0f8ff;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -62,6 +62,10 @@ hr {
   border-top: 0px solid #000;
   margin: 0;
   padding: 0;
+}
+
+#dropdown {
+  display: none;
 }
 
 nav {
@@ -128,7 +132,7 @@ p {
 }
 
 #right {
-  background-image: url("https://live.staticflickr.com/65535/54437776455_3c4f238a16_o.jpg");
+  background-image: url("https://live.staticflickr.com/65535/54384643982_ae40979d72_o.gif");
   background-size: cover;
   background-repeat: no-repeat;
   border: 1.5px solid #000;
@@ -146,10 +150,10 @@ footer p {
   color: #000;
   text-decoration: none;
 
-footer p a {
-  color: #000;
-  text-decoration: none;
-}
+  footer p a {
+    color: #000;
+    text-decoration: none;
+  }
 }
 
 footer p a {
@@ -209,12 +213,12 @@ ul li a:hover {
   color: #000dff;
 }
 
-#cool{
+#cool {
   float: left;
   position: relative;
 }
 
-.flower{
+.flower {
   position: relative;
   z-index: 1;
   height: 8em;
@@ -222,16 +226,128 @@ ul li a:hover {
   margin-top: 2em;
 }
 
-.sun{
+.sun {
   position: absolute;
-  z-index: 2; /* put .gold-box above .green-box and .dashed-box */
+  z-index: 2;
   width: 80%;
   left: 220px;
   top: 10em;
 }
 
-#websites{
-float: left;
-position: relative;
-margin: 2em;
+#websites {
+  float: left;
+  position: relative;
+  margin: 2em;
+}
+
+@media (max-width:900px) {
+
+
+  body {
+    width: 95%;
+    margin: 25px auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #dropdown {
+    grid-area: nav;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: right;
+    line-height: 20px;
+    display: inline;
+
+  }
+
+  #dropdown ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: right;
+    line-height: 20px;
+    display: inline;
+
+  }
+
+  #dropdown li {
+    display: inline-block;
+    padding: 0px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+  }
+
+  #dropdown a {
+    text-decoration: none;
+    padding: 5px 5px;
+    display: inline-block;
+    position: relative;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #000;
+  }
+
+  /*dropdown*/
+  #dropdown ul li ul {
+    position: absolute;
+    background-color: white;
+    display: none;
+    justify-content: left;
+    text-align: left;
+padding: 0;
+
+  }
+
+  #dropdown ul li ul a {
+    color: 000;
+    background-color: #ffffff;
+  }
+
+  #dropdown ul li:hover ul {
+    color: #000dff;
+    display: grid;
+  }
+
+  #logo {
+    grid-area: logo;
+    position: absolute;
+    margin: auto;
+    justify-content: left;
+  }
+
+  #box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: ;
+  }
+
+  #right {
+    background-image: url("https://live.staticflickr.com/65535/54384643982_ae40979d72_o.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1.5px solid #000;
+    height: 20em;
+  }
+
+  #websites {
+    position: relative;
+    margin-top: 10em;
+  }
+
+  .flower {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+
+  .sun {
+    position: relative;
+    z-index: 2;
+    left: 10em;
+    top: 20em;
+  }
+
 }
