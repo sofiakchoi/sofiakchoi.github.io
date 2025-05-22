@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="skeleton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,27 +16,11 @@
 </head>
 
 <body>
+    <div id="topbar">
     <hr>
-    <div class="heading">
-        <h1 id="logo">Sofia Choi Sandbox Site</h1>
-        <div id="dropdown">
-            <ul>
-                <li><a href="#">Project 01</a>
-                    <ul>
-                        <li><a href="https://www.figma.com/proto/fZNofDMO9w3KeT2m0WYhX5/Project01-DSGN372?node-id=113-146&p=f&t=JsidyTPHvHMQp3su-1&scaling=scale-down&content-scaling=fixed&page-id=35%3A24&starting-point-node-id=113%3A146&show-proto-sidebar=1">Web Prototype</a></li>
-                        <li><a href="https://www.figma.com/proto/fZNofDMO9w3KeT2m0WYhX5/Project01-DSGN372?node-id=134-835&t=vuWa4Gh3bsFhjlXF-1&scaling=scale-down&content-scaling=fixed&page-id=82%3A797&starting-point-node-id=134%3A835">Mobile Prototype</a></li>
-                        <li><a href="CASESTUDY.pdf">Casestudy</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Project 02</a>
-                    <ul>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Casestudy</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <nav>
+    <div class="row">
+        <h5 class="one-half column">Sofia Choi Sandbox Site</h5>
+        <nav class="one-half column">
             <ul>
                 <li><a
                         href="https://www.figma.com/proto/fZNofDMO9w3KeT2m0WYhX5/Project01-DSGN372?node-id=134-835&t=vuWa4Gh3bsFhjlXF-1&scaling=scale-down&content-scaling=fixed&page-id=82%3A797&starting-point-node-id=134%3A835">P.1
@@ -49,55 +35,70 @@
         </nav>
     </div>
     <hr>
-    <article ID="box">
-        <div ID="left">
-            <h2>Hello!</h2>
-            <hr>
-            <p>
-                My name is Sofia, I am a third-year design student at Western Washington University. I am a
-                passionate
-                learner, I love to experiment and try new things in both design and in my hobbies.
-                I am primarily interested in typography, printed materials, and web design.
-                <br>
-                I spend a lot of my time finding new websites to explore. I am interested in the concept of a handmade
-                web
-                and websites as architecture. Websites are spaces we occupy, their structure dictates the ways we
-                interact
-                with their infrastructure and conduct ourselves within them. Their architecture should be constructed
-                with
-                users in mind. The internet is alive, it has been built and sustained on the love, labor, and curiosity
-                of
-                millions. I dream of an internet belonging to the people–beautiful, intimate, and human-centered. I hope
-                my
-                work can contribute to the creation of this world and proliferation of information to the public.
-            </p>
-            <hr>
-            <h2>Design 372 Spring Quarter 2025</h2>
-        </div>
-        <div ID="right">
-            <!-- image is placed here in CSS -->
-        </div>
-    </article>
-    <div id="cool">
-        <div class="flower">
-            <img src="HAPPY.png" alt="happy flower picture">
-        </div>
-        <div class="sun">
-            <img src="SUN.png" alt="happy sun picture">
+</div>
+    <div class="box">
+        <div class="row">
+            <div class="one-half column">
+                <div id="boxstroke">
+                    <h5>Hello!</h5>
+                    <hr>
+                    <p>
+                        My name is Sofia, I am a third-year design student at Western Washington University. I am a
+                        passionate
+                        learner, I love to experiment and try new things in both design and in my hobbies.
+                        I am primarily interested in typography, printed materials, and web design.
+                        <br>
+                        I spend a lot of my time finding new websites to explore. I am interested in the concept of a
+                        handmade
+                        web
+                        and websites as architecture. Websites are spaces we occupy, their structure dictates the ways
+                        we
+                        interact
+                        with their infrastructure and conduct ourselves within them. Their architecture should be
+                        constructed
+                        with
+                        users in mind. The internet is alive, it has been built and sustained on the love, labor, and
+                        curiosity
+                        of
+                        millions. I dream of an internet belonging to the people–beautiful, intimate, and
+                        human-centered. I
+                        hope
+                        my
+                        work can contribute to the creation of this world and proliferation of information to the
+                        public.
+                    </p>
+                    <hr>
+                    <h5>Design 372 Spring Quarter 2025</h5>
+                </div>
+            </div>
+            <div class="one-half column">
+                <div id="image">
+                 <img src="https://live.staticflickr.com/65535/54384643982_ae40979d72_o.gif" alt="">
+                </div>
+            </div>
         </div>
     </div>
-    <div id="websites">
-        <h2>Websites I like</h2>
-        <ul class="list">
-            <li><a href="https://thehtml.review/04/">HTML Review</a></li>
-            <li><a href="https://brutalistwebsites.com/">Brutalist Websites</a></li>
-            <li><a href="https://www.hoverstat.es/">Hoverstat.es</a></li>
-            <li><a href="https://thediagram.com/24_4/">Diagram</a></li>
-        </ul>
+    <div class="row">
+        <div class="one-half column">
+            <div class="flower">
+                <img src="HAPPY.png" alt="happy flower picture">
+            </div>
+            <div class="sun">
+                <img src="SUN.png" alt="happy sun picture">
+            </div>
+        </div>
+        <div class="one-half column">
+            <div id="websites">
+                <h5>Websites I like</h5>
+                <ul class="list">
+                    <li><a href="https://thehtml.review/04/">HTML Review</a></li>
+                    <li><a href="https://brutalistwebsites.com/">Brutalist Websites</a></li>
+                    <li><a href="https://www.hoverstat.es/">Hoverstat.es</a></li>
+                    <li><a href="https://thediagram.com/24_4/">Diagram</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <footer>
-        <p>Sofia Choi 2025 &copy; <a href="mailto:sofiakchoi@gmail.com">Email</a></p>
-    </footer>
 </body>
 
 </html>

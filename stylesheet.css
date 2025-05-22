@@ -26,23 +26,19 @@
   margin: 0;
 }
 
-body {
-  width: 95%;
-  height: auto;
-  margin: 25px auto;
-  background-color: #ffffff;
+.box {
+  margin-top: 3em;
 }
 
-h1 {
+h5 {
   color: #000;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.25em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   justify-content: center;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px 0px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 
@@ -64,15 +60,11 @@ hr {
   padding: 0;
 }
 
-#dropdown {
-  display: none;
-}
-
 nav {
-  padding-top: 15px;
+  padding: 15px 0px 0px;
   font-family: "IBM Plex Sans", sans-serif;
   text-align: right;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 nav ul {
@@ -108,117 +100,22 @@ nav ul li a:hover {
   color: #000dff;
 }
 
-.heading {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-}
 
 p {
   font-family: "IBM Plex Sans", sans-serif;
-  padding: 10px 0px 10px 0px;
-}
-
-#box {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-#left {
-  border: 1.5px solid #000;
-  padding: 0px 15px;
-}
-
-#right {
-  background-image: url("https://live.staticflickr.com/65535/54384643982_ae40979d72_o.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1.5px solid #000;
-}
-
-footer {
-  text-align: center;
-  padding-top: 25em;
-  padding-bottom: 3em;
-  clear: left;
-}
-
-
-footer p {
-  color: #000;
-  text-decoration: none;
-
-  footer p a {
-    color: #000;
-    text-decoration: none;
-  }
-}
-
-footer p a {
-  color: #000;
-  text-decoration: none;
-}
-
-footer p a:link {
-  color: #000;
-  text-decoration: none;
-}
-
-footer p a:visited {
-  color: #000;
-  text-decoration: none;
-}
-
-footer p a:hover {
-  color: #000dff;
-  text-decoration: none;
-}
-
-img {
-  width: 25em;
-  margin: 2em;
-}
-
-.list {
-  list-style-type: none;
-  padding-left: 0;
-  font-family: "IBM Plex Sans", sans-serif;
-  line-height: 20px;
-  position: relative;
-}
-
-ul li a {
-  text-decoration: none;
-  padding: 0px 0px 0px 20px;
-  color: #000;
-}
-
-ul li a:link {
-  text-decoration: none;
-  padding: 0px 0px 0px 20px;
-  color: #000;
-}
-
-ul li a:visited {
-  text-decoration: none;
-  padding: 0px 0px 0px 20px;
-  color: #000;
-}
-
-ul li a:hover {
-  text-decoration: none;
-  padding: 0px 0px 0px 20px;
-  color: #000dff;
-}
-
-#cool {
-  float: left;
-  position: relative;
 }
 
 .flower {
+  position: relative;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  margin-bottom: 8em;
+  margin-top: 2em;
+  left: 6em;
+}
+
+.flower img{
   position: relative;
   z-index: 1;
   height: 8em;
@@ -227,126 +124,41 @@ ul li a:hover {
 }
 
 .sun {
+  position: relative;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  margin-bottom: 20em;
+  margin-top: -15em;
+  left: -4em;
+}
+
+.sun img{
   position: absolute;
   z-index: 2;
-  width: 80%;
+  height: 6em;
   left: 220px;
   top: 10em;
 }
 
-#websites {
-  float: left;
-  position: relative;
-  margin: 2em;
+#image {
+  border: 1.5px solid #000;
+  overflow: hidden;
 }
 
-@media (max-width:900px) {
+#image img{
+  overflow: hidden;
+}
 
+#boxstroke {
+  border: 1.5px solid #000;
+  padding: 0px 15px;
+}
 
-  body {
-    width: 95%;
-    margin: 25px auto;
-  }
+#websites{
+  margin-top: 3em;
+}
 
-  nav {
-    display: none;
-  }
-
-  #dropdown {
-    grid-area: nav;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: "IBM Plex Sans", sans-serif;
-    text-align: right;
-    line-height: 20px;
-    display: inline;
-
-  }
-
-  #dropdown ul {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: "IBM Plex Sans", sans-serif;
-    text-align: right;
-    line-height: 20px;
-    display: inline;
-
-  }
-
-  #dropdown li {
-    display: inline-block;
-    padding: 0px;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: #000;
-  }
-
-  #dropdown a {
-    text-decoration: none;
-    padding: 5px 5px;
-    display: inline-block;
-    position: relative;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: #000;
-  }
-
-  /*dropdown*/
-  #dropdown ul li ul {
-    position: absolute;
-    background-color: white;
-    display: none;
-    justify-content: left;
-    text-align: left;
-    padding: 0;
-
-  }
-
-  #dropdown ul li ul a {
-    color: #000;
-    background-color: #ffffff;
-  }
-
-  #dropdown ul li:hover ul {
-    color: #000dff;
-    display: grid;
-  }
-
-  #logo {
-    grid-area: logo;
-    position: absolute;
-    margin: auto;
-    justify-content: left;
-  }
-
-  #box {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #right {
-    background-image: url("https://live.staticflickr.com/65535/54384643982_ae40979d72_o.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1.5px solid #000;
-    height: 20em;
-  }
-
-  #websites {
-    position: relative;
-    margin-top: 10em;
-  }
-
-  .flower {
-    position: absolute;
-    z-index: 1;
-    margin-bottom: 1em;
-    margin-top: 2em;
-  }
-
-  .sun {
-    position: relative;
-    z-index: 2;
-    left: 10em;
-    top: 20em;
-  }
-
+#topbar{
+  margin-top: 3em;
 }
