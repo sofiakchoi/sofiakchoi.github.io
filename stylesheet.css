@@ -115,7 +115,7 @@ p {
   left: 6em;
 }
 
-.flower img{
+.flower img {
   position: relative;
   z-index: 1;
   height: 8em;
@@ -133,7 +133,7 @@ p {
   left: -4em;
 }
 
-.sun img{
+.sun img {
   position: absolute;
   z-index: 2;
   height: 6em;
@@ -146,7 +146,7 @@ p {
   overflow: hidden;
 }
 
-#image img{
+#image img {
   overflow: hidden;
 }
 
@@ -155,10 +155,68 @@ p {
   padding: 0px 15px;
 }
 
-#websites{
+#websites {
   margin-top: 3em;
 }
 
-#topbar{
+#topbar {
   margin-top: 3em;
 }
+
+#button {
+  display: flex;
+  white-space: nowrap;
+  width: 200px;
+  text-align: center;
+  line-height: 120%;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  background: linear-gradient(90deg, #000dff, #ffffff);
+  border: 1.5px solid #000;
+  overflow: hidden;
+}
+
+#click {
+  animation-name: click;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  padding: 5px 15px 5px 15px ; 
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes click {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#button:hover {
+  display: flex;
+  white-space: nowrap;
+  width: 200px;
+  text-align: center;
+  line-height: 120%;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff0000, #ffffff);
+  border: 1.5px solid #000;
+  overflow: hidden;
+}
+
